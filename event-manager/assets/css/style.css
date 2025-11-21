@@ -1,0 +1,72 @@
+.single_event *{
+    transition:.2s;
+}
+.single_event{
+    width:100%;
+    max-width: 860px;
+    box-sizing: border-box;
+    margin:12px auto;
+}
+.single_event .card{
+    padding:24px;
+    margin:24px 0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px 4px #ccc;
+
+    .card_info{
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+    }
+}
+
+.single_event button{
+    all: unset;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(188deg, #f3a901, #edba5c);
+    cursor: pointer;
+    pointer-events: all;
+}
+.single_event button:hover{
+    background: linear-gradient(188deg, #cff301, #baed5c);
+}
+.single_event_title{
+    font-size:2rem;
+}
+.single_event_date {
+    opacity: 0.7;
+}
+.single_event_description.event_description {
+    padding: 24px 12px;
+    outline: 1px solid #eee;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 1rem;
+}
+
+.card_register {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    z-index: 999;
+    height: 100%;
+    background: #88888833;
+    backdrop-filter: blur(4px);
+}
+
+.card_register form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 48px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 4px #eee;
+}
